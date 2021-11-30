@@ -46,6 +46,22 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
+// const eqObjects = function(object1, object2) {
+//   if (Object.keys(object1).length !== Object.keys(object2).length) {
+//     return false;
+//   } else {
+//     for (let keys in object1) {
+//       if (Array.isArray(object1[keys])) {
+//         if (!eqArrays(object1[keys], object2[keys])) {
+
+//         }
+//       } else {
+//         flag.push(true);
+//       }
+//     }
+//   }
+// };
+
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 assertEqual((eqObjects(ab, ba)), true); // => true

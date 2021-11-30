@@ -6,14 +6,14 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function(letters){
+const countLetters = function(letters) {
   let count = {};
   for (const elements of letters) {
     if (count[elements]) {
       count[elements] += 1;
     } else {
       if (elements !== " ") {
-        count[elements] = 1
+        count[elements] = 1;
       }
     }
   }

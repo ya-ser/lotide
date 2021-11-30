@@ -1,8 +1,8 @@
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`🤩🤩🤩 Assertion Passed: ${actual} === ${expected}`);
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`😭😭😭 Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
@@ -20,7 +20,7 @@ const assertEqual = function(actual, expected) {
 const findKeyByValue = function(object, value) {
   let genres = Object.keys(object);
   for (let key of genres) {
-    if (object[key] === value) {
+    if (object[key] === value) {// in order to compare if key has value, you need to specify the object first then index it by key and then check if equals value
       return key;
     }
   }
